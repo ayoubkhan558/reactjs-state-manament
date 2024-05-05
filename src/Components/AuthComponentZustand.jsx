@@ -12,9 +12,14 @@ const AuthComponentZustand = () => {
 
   return (
     <div>
-      <h2 className="text-xl font-bold mb-3">
-        State using Zustand
-      </h2>
+      <div className="mb-3">
+        <h2 className="text-xl font-bold">
+          State using Zustand
+        </h2>
+        <p>
+          <sub>43K Stars</sub> | <sub>1.7kb (minified)</sub>
+        </p>
+      </div>
 
       {loading ? (
         <p>Loading...</p>

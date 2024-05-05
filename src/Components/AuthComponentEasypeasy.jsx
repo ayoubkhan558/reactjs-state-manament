@@ -9,9 +9,14 @@ const AuthComponentEasypeasy = () => {
 
   return (
     <div>
-      <h2 className="text-xl font-bold mb-3">
-        State using easy-peasy
-      </h2>
+      <div className="mb-3">
+        <h2 className="text-xl font-bold">
+          State using easy-peasy
+        </h2>
+        <p>
+          <sub>5K Stars</sub> | <sub>35.3 kB (minified), 11.0 kB GZIP</sub>
+        </p>
+      </div>
 
       {loading ? (
         <p>Loading...</p>

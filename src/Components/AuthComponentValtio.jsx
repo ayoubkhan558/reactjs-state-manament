@@ -9,9 +9,15 @@ const AuthComponentValtio = () => {
 
   return (
     <div>
-      <h2 className="text-xl font-bold mb-3">
-        State using Valtio
-      </h2>
+      <div className="mb-3">
+        <h2 className="text-xl font-bold">
+          State using Valtio
+        </h2>
+        <p>
+          <sub>8.5K Stars</sub>
+          <sub> 1.5KB (minified), 3kB GZIP </sub>
+        </p>
+      </div>
 
       {loading ? (
         <p>Loading...</p>

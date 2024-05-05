@@ -41,9 +41,14 @@ const AuthComponentRecoil = () => {
 
   return (
     <div>
-      <h2 className="text-xl font-bold mb-3">
-        State using Recoil <sub>20K Stars</sub>
-      </h2>
+      <div className="mb-3">
+        <h2 className="text-xl font-bold">
+          State using Recoil
+        </h2>
+        <p>
+          <sub>20K Stars</sub> | <sub>14kb Size</sub>
+        </p>
+      </div>
 
       {onlineUser?.name} <br />
 
@@ -79,26 +84,27 @@ const AuthComponentRecoil = () => {
             <div>
               <button
                 className="btn-dark mt-3"
-                onClick={async () => {
-                  setLoading(false);
-                  setAge(2323)
-                  try {
-                    const response = await axios.get('https://jsonplaceholder.typicode.com/users/9');
-                    const newData = response?.data;
-                    setData(newData);
-                    // setUser2(newData);
-                  } catch (error) {
-                    console.error('Error fetching data:', error);
-                  }
-                  // setData(
-                  //   { username: 'jan2', phone: '+923347812124' }
-                  // )
-                  // setUser2(
-                  //   { username: 'jan2', phone: '+923347812124' }
-                  // )
-                }}
-              // onClick={getUser}
-              // onClick={fetchUserData}
+                // onClick={async () => {
+                //   setLoading(false);
+                //   setAge(2323)
+                //   try {
+                //     const response = await axios.get('https://jsonplaceholder.typicode.com/users/9');
+                //     const newData = response?.data;
+                //     setData(newData);
+                //     // setUser2(newData);
+                //   } catch (error) {
+                //     console.error('Error fetching data:', error);
+                //   }
+                //   // setData(
+                //   //   { username: 'jan2', phone: '+923347812124' }
+                //   // )
+                //   // setUser2(
+                //   //   { username: 'jan2', phone: '+923347812124' }
+                //   // )
+                // }}
+                // onClick={getUser}
+                // onClick={fetchUserData}
+                onClick={() => fetchUser(7)}
               >
                 Get User
               </button>

@@ -45,9 +45,14 @@ const AuthComponentJatoi = () => {
 
   return (
     <div>
-      <h2 className="text-xl font-bold mb-3">
-        State using Jotai
-      </h2>
+      <div className="mb-3">
+        <h2 className="text-xl font-bold">
+          State using Jotai
+        </h2>
+        <p>
+          <sub>17.3K Stars</sub> | <sub>4.4KB (minified) | 3kb Size</sub>
+        </p>
+      </div>
 
       {loading ? (
         <p>Loading...</p>
